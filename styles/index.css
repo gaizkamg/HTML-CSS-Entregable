@@ -1,0 +1,25 @@
+/* RESET */
+
+html {
+    /* 62.5% of 16px user agent font size is 10px */
+    font-size: 62.5%;
+  }
+
+/* FIN RESET */
+
+h1 {
+    margin: 3rem;
+}
+
+a{
+    color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+}
+
+.enlaces{
+    display: flex;
+    flex-direction: column;
+    background-color: coral;
+
+}
