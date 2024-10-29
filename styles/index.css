@@ -5,6 +5,10 @@ html {
     font-size: 62.5%;
   }
 
+body {
+        font-size: 1.6rem;
+}
+
 /* FIN RESET */
 
 h1 {
@@ -16,7 +20,23 @@ h1 {
     color: rgb(23, 23, 172);
 }
 
-a {
+
+.enlaces {
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 3rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    
+    
+    background-color: rgb(33, 138, 138);
+    width: 50%;    
+}
+
+.enlaces a {
     color: bisque;
     font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
@@ -24,23 +44,7 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+.enlaces a:hover{
     background-color: rgb(7, 226, 255);
     color: blue;
-}
-
-.enlaces {
-    margin: 0 auto;
-    padding: 3rem;
-    border-radius: 3rem;
-
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    text-align: center;
-
-
-    background-color: rgb(33, 138, 138);
-    width: 50%;
-
 }
