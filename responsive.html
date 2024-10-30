@@ -1,29 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
-            rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
     <title>Responsive Web</title>
 </head>
+
 <body>
     <header>
         <h1>Conceptos HTML Y CSS</h1>
     </header>
     <main>
-       <h2>Responsive Web Design</h2>
-        <p>Cada vez es más frecuente acceder a Internet con diferentes tipos de dispositivos, que a su vez tienen diferentes pantallas y resoluciones, con distintos tamaños y formas, que hacen que se consuman las páginas webs de formas diferentes, apareciendo por el camino también diferentes necesidades, problemas y soluciones.</p>
-        <p>Hoy en día se le denomina Responsive Web Design (o RWD) a los diseños web que tienen la capacidad de adaptarse al tamaño y formato de la pantalla en la que se visualiza el contenido, respecto a los diseños tradicionales en los que las páginas web estaban diseñadas sólo para un tamaño o formato específico, y no tenían esa capacidad de adaptación.</p>
-       <div class="volver">
-        <a href="index.html">VOLVER AL INDICE</a>
-       </div>
+        <article>
+            <h2>Responsive Web Design</h2>
+            <p>Cada vez es más frecuente acceder a Internet con diferentes tipos de dispositivos, que a su vez tienen
+                diferentes pantallas y resoluciones, con distintos tamaños y formas, que hacen que se consuman las
+                páginas webs de formas diferentes, apareciendo por el camino también diferentes necesidades, problemas y
+                soluciones.</p>
+
+                <div class="card-container">
+                    <!-- Checkbox oculto que actúa como disparador -->
+                    <input type="checkbox" id="toggle" class="toggle-checkbox">
+                    <label for="toggle" class="toggle-label">Mostrar tarjeta</label>
+                
+                    <!-- Contenido desplegable -->
+                    <div class="card">
+                        <p>Este es el contenido de la tarjeta que se despliega.</p>
+                    </div>
+                </div>
+
+            <p>Hoy en día se le denomina Responsive Web Design (o RWD) a los diseños web que tienen la capacidad de
+                adaptarse al tamaño y formato de la pantalla en la que se visualiza el contenido, respecto a los diseños
+                tradicionales en los que las páginas web estaban diseñadas sólo para un tamaño o formato específico, y
+                no tenían esa capacidad de adaptación.</p>
+
+            <section class="first-mobile">
+                <h2>First Mobile</h2>
+                <h3>Qué es el mobile first</h3>
+                <p>
+                    El mobile first es un enfoque de diseño y desarrollo web que se centra en la creación de una
+                    experiencia óptima para dispositivos móviles. Su objetivo principal es priorizar la optimización de
+                    la navegación a través de un sitio web o aplicación en estos dispositivos.
+                    Además, este concepto reconoce que los usuarios móviles representan una gran parte de la audiencia
+                    en línea, por lo que es esencial darles una buena experiencia desde el principio. Sin embargo, esto
+                    no quiere decir que se descuide la versión de escritorio, sino que esta se aborda después de haber
+                    diseñado la móvil.
+                    Este tipo de diseño sigue estos principios básicos:
+                </p>
+                <ul>
+                    <li>Diseño responsivo: planifica el diseño de la interfaz y la disposición de los elementos para su
+                        despliegue en dispositivos móviles. Esto implica la adaptación de su estructura para tamaños de
+                        pantalla más pequeños y para diferentes orientaciones.</li>
+                    <li>Carga rápida: presta especial atención a la velocidad de carga en este tipo de dispositivos, ya
+                        que las conexiones pueden ser más lentas que las de banda ancha. Para ello, busca optimizar las
+                        imágenes y minimizar las solicitudes de servidor para acelerar la carga.</li>
+                    <li>Contenido prioritario: favorece el contenido más importante y relevante para los usuarios
+                        móviles. Esto implica simplificar la navegación y enfocarse en lo esencial para evitar la
+                        sobrecarga de información en pantallas pequeñas.</li>
+                    <li>Interacción táctil: tiene en cuenta la navegación basada en gestos y la interacción táctil, en
+                        lugar de depender del puntero del ratón. Para esto, los elementos interactivos se hacen más
+                        grandes y fáciles de tocar.</li>
+                    <li>Pruebas en dispositivos móviles: realiza verificaciones exhaustivas en una variedad de
+                        dispositivos móviles y navegadores para garantizar que la experiencia del usuario sea
+                        consistente y de alta calidad en todos ellos.</li>
+                </ul>
+
+                <h3>¿Por qué es importante el Mobile First?</h3>
+                <p>
+                    El concepto fue creado en 2011 por Luke Wroblewski, director de producto de Google, cuando publicó
+                    su libro “Mobile First” como propuesta para crear un sitio web diseñado primero en móviles y después
+                    adaptado al ordenador.
+                    Pero, ¿qué es exactamente el Mobile First? Esta metodología se centra en diseñar primero pensando en
+                    el móvil, y después ya se creará el resto de diseños en la tablet, ordenador y otros dispositivos.
+                    La razón por la que es una tendencia es porque actualmente, y desde hace bastante tiempo, el móvil
+                    es el principal dispositivo de acceso a Internet. Por lo tanto, es esencial diseñar para los
+                    dispositivos móviles desde el principio y después adaptarlos a los demás para que la experiencia de
+                    usuario sea excelente.
+                </p>
+                <h3>Ventajas del Mobile First</h3>
+                La popularidad del Mobile First no es casualidad, así lo demuestran las numerosas ventajas que ofrece.
+                Estas son algunas de las principales.
+                <ul>
+                    <li>Incrementa la visibilidad. El Mobile First permite construir un sitio web diseñado especialmente
+                        para los móviles, lo que incremente la visibilidad de la empresa, permitiendo un aumento en la
+                        captación de leads.</li>
+                    <li>Potencia la creatividad. Las limitaciones que tienen los móviles provocan una mayor creatividad
+                        en los diseñadores web. Esto se debe a que el tamaño reducido de la pantalla hace que sea
+                        necesario buscar soluciones más innovadoras para mejorar la experiencia de usuario.</li>
+                    <li>Mayor facilidad para adaptar al ordenador. El esfuerzo para adaptar el diseño de una web de
+                        móvil a una de ordenador es mucho menor que al contrario.</li>
+                    <li>Mejor posicionamiento. Google coloca en mejores posiciones a las páginas que ofrecen una mejor
+                        experiencia de usuario en dispositivos móviles. Y esto está asegurado en Mobile First.</li>
+                </ul>
+                <p>
+                    La estrategia Mobile-first es la que utilizan los diseñadores de sitios webs en las que su público
+                    objetivo es mayoritariamente usuario de móvil.
+                    Esta estrategia hace que el desarrollo en escritorio sea muy sencillo, ya que se reduce a tener un
+                    diseño de móvil en escritorio e ir añadiendo nuevas secciones o partes para «completar» el diseño en
+                    resoluciones grandes.
+                </p>
+
+            </section>
+            <section class="viewport">
+                <h2>Etiqueta Viewport</h2>
+                La etiqueta <code>&lt;meta name="viewport"&gt;</code> es una parte esencial del diseño web responsive porque le dice al navegador cómo debe ajustar y mostrar la página en diferentes dispositivos.
+            </section>
+            <section class="mediaqueries">
+                <h2>Media Queries</h2>
+            </section>
+
+
+        </article>
+
+        <div class="volver">
+            <a href="index.html">VOLVER AL INDICE</a>
+        </div>
     </main>
     <footer>
     </footer>
- </body>
+</body>
+
 </html>
