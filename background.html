@@ -4,26 +4,255 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/background.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
+        <link 
             href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
             rel="stylesheet">
-    <title>Background</title>
+    <title> CSS Background</title>
 </head>
-<body>
-    <header>
+ <header>
         <h1>Conceptos HTML Y CSS</h1>
     </header>
     <main>
-       <h2>Background</h2>
-       <p>Primer párrafo</p>
-       <div class="volver">
-        <a href="index.html">VOLVER AL INDICE</a>
-       </div>
+       <h2> CSS Background</h2>
+       <!--menu-->
+       <nav class="menu">
+
+<div class="subgrupo">
+    <div class="section1">
+        propiedades:
+    </div>
+    
+    <a href="#section1">background-color</a>
+    <a href="#section2">background-image</a>
+    <a href="#section3">background-size</a>
+</div>
+
+<div class="subgrupo">
+    <a href="#section4">background-position</a>
+    <a href="#section5">background-attachment</a>
+    <a href="#section6">background-repeat</a>
+</nav>
+<hr>
+</div>
+
+
+   <!-- Contenedor principal Sections -->
+   <div class="contenido">
+    <!-- Sections con IDs -->
+    <section id="section2">
+        <div class="left-column">
+       <!-- AQUI NOMBRE DEL ELEMENTO-ESTILO-PSEUDOCLASE...-->
+            <h2>1. Background-color</h2>
+       <!-- INSERTAMOS AQUI LOS TEXTOS DE CONTENIDO E IMAGENES -->
+            <p>Background-color es un propiedad de CSS que define el color de fondo de un elemento.</p>
+
+          
+
+        <p>Existen muchas opciones pero las más populares son:</p>
+        <ul>
+
+          <li>  - Color sólido usando nombre. </li>
+          <li> - Color sólido usando el valor hexadecimal.</li>
+           <li> - Color sólido Usando la función RGB().</li>
+           <li>- Color sólido usando HLS().</li>
+        </ul>
+
+           <h2>Por Ejemplo</h2>
+        
+           <p>background-color: red; (Nombre)</p>
+           <titulo>ejemplo de red-box</titulo>
+           <div class="red-box"></div>
+           <p> background-color: #ff4433;( Hexadecimal)</p>
+           <p> background-color: hsl(22, 100%, 63%); (HSL)</p>
+           <p> background-color: rgb(255, 0, 0);(RGB) </p>
+           <titulo>ejemplo de rgb</titulo>
+           <img src="images/color-picker-default.png" alt="default.png">
+
+           
+        </p>
+
+    </section>
+
+
+ <!-- Contenedor principal Sections -->
+ <div class="contenido">
+    <!-- Sections con IDs -->
+    <section id="section3">
+        <div class="left-column">
+       <!-- AQUI NOMBRE DEL ELEMENTO-ESTILO-PSEUDOCLASE...-->
+            <h2>2.Background-image</h2>
+       <!-- INSERTAMOS AQUI LOS TEXTOS DE CONTENIDO E IMAGENES -->
+       <p>LA propiedad CSS background-image establece una o más imágenes de fondo para un elemento.</p>
+       <p>Explicao dos parametros: </p>
+       <ul>
+       <li> url(): Define o caminho da imagem que será utilizada como fundo. Pode ser un caminho relativo o absoluto.</li>
+       <li> none: Define que o elemento nao tera imagen de fundo. </li>
+
+       </ul>
+       
+       <h3>Por Ejemplo:</h3>
+
+      <p>Imagem de fundo en un elemento div:</p>
+       
+     <p> div {</p>
+        <p>  width: 300px;</p>
+          <p>height: 200px;</p>
+          <p> background-image: url('imagem.jpg');</p>
+          <p> background-size: cover;}</p>
+
+    </section>
+
+
+
+<!-- Contenedor principal Sections -->
+ <div class="contenido">
+    <!-- Sections con IDs -->
+    <section id="section4">
+        <div class="left-column">
+       <!-- AQUI NOMBRE DEL ELEMENTO-ESTILO-PSEUDOCLASE...-->
+            <h2>3.Background-size</h2>
+       <!-- INSERTAMOS AQUI LOS TEXTOS DE CONTENIDO E IMAGENES -->
+       <p>La propiedad CSS background-size especifica el tamaño de las imágenes de fondo.</p>
+       <p>Es una de las palabras claves: </p>
+       <ul>
+       <li>.contain: Escala la imagen al mayor tamaño posible sin recortarla ni estirarla.  </li>
+       <li> .cover: Escala la imagen al mayor tamaño posible sin estirarla.
+         Si las proporciones de la imagen difieren de las del elemento, es 
+         recortada vertical u horizontalmente para que no quede un espacio vacío.  </li>
+
+       </ul>
+       
+    
+    <img src="images/cover-and-contain.jpg" alt="contain.jpg">
+
+    </section>
+
+
+      
+       
+
+          
+
+            
+        
+
+    <!-- Contenedor principal Sections -->
+    <div class="contenido">
+       <!-- Sections con IDs -->
+       <section id="section4">
+           <div class="left-column">
+          <!-- AQUI NOMBRE DEL ELEMENTO-ESTILO-PSEUDOCLASE...-->
+               <h2>4.Background-position</h2>
+          <!-- INSERTAMOS AQUI LOS TEXTOS DE CONTENIDO E IMAGENES -->
+          <p>A propriedade CSS background-position define a posicao inicial da imagen de fundo en relacao a elemento.</p> 
+            <P>Esta posicao controla onde a imagen de fundo é ancorada dentro do espaço do elemento.</p> 
+               <p> Podendo ser usada para ajustes finos,
+                tanto con valores exatos quanto com palavras-chave.</p>
+           <h3>  Podemos usar una combinación de estos valores:</h3>
+          <ul>
+            <li>top</li>
+            <li>left</li>
+          <li>right</li>
+            <li>bottom</li>
+          </ul>
+          
+       
+       <img src="images/BackgroundPosition1.png" alt="backgroundposition1.png">
+   
+
+
+
+
+   <!-- Contenedor principal Sections -->
+   <div class="contenido">
+    <!-- Sections con IDs -->
+    <section id="section5">
+        <div class="left-column">
+       <!-- AQUI NOMBRE DEL ELEMENTO-ESTILO-PSEUDOCLASE...-->
+            <h2>5.Background-attachment</h2>
+       <!-- INSERTAMOS AQUI LOS TEXTOS DE CONTENIDO E IMAGENES -->
+            <p>La propiedad CSS background-attachment determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor.</p>
+
+          
+
+        <p>Hay tres valores posibles:</p>
+        <ul>
+
+          <li> Local</li>
+          <li> Scroll</li>
+           <li> Fixed</li>
+           </ul>
+
+          <p> Cuando usamos scroll la imagen se fija y podemos desplazarnos libremente por nuestro contenido. </p>
+          <p>El valor fijo nos da un efecto de paralaje en el desplazamiento del mouse y produce múltiples 
+           imágenes siempre que nuestro contenido no termine.</p>
+          
+        
+
+         
+
+            
+        <pre><code>
+            <!-- AQUI SE INSERTA EL CODIGO -->
+
+       <!-- AQUI DEBE TERMINAR LA INSERCCIÓN DE CONTENIDO -->
+    </code></pre>
+
+        </div>
+        <div class="right-column">
+        <img src="" alt="">
+        </div>
+    </section>
+
+
+
+
+    
+ <!-- Contenedor principal Sections -->
+ <div class="contenido">
+    <!-- Sections con IDs -->
+    <section id="section4">
+        <div class="left-column">
+       <!-- AQUI NOMBRE DEL ELEMENTO-ESTILO-PSEUDOCLASE...-->
+            <h2>6.Background-repeat</h2>
+       <!-- INSERTAMOS AQUI LOS TEXTOS DE CONTENIDO E IMAGENES -->
+      <p>A propriedade CSS background-repeat controla como a imagen de fundo é repetida en un elemento HTML.</p>
+        <p>Por padrão, a imagen  de fundo será repetida tanto horizontalmente quanto verticalmente, cobrindo todo o espaço do elemento.</p>
+
+       
+       <h3>Esta propiedad tiene seis valores posibles:</h3>
+    <ul>
+
+<li>repeat</li>
+   <li>repeat-x</li>
+   <li>repeat-y</li>
+   <li>no repeat</li>
+   <li>space</li>
+   <li>round</li>
+ </ul>
+
+<img src="images/repeat.png" alt="repeat.png">
+
+
+
+
+
+
+
+
+    
     </main>
+
+   
     <footer>
+        <div class="volver">
+            <a href="index.html">VOLVER AL INDICE con autosafe</a>
+           </div>
 
     </footer>
+   
  </body>
 </html>

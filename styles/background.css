@@ -1,0 +1,48 @@
+/* RESET */
+
+body{
+
+   
+     background-color: white;
+}
+
+
+
+
+.bcolor{
+   
+    background-color: #ff4433; /* color hexadecimal*/
+ 
+    background-color: rgba (99, 110, 114, 0.5);
+    background-color: hsl(22, 100%, 63%);
+   
+}
+
+.bcolor-solido{
+    background-color: pink; /* color sólido*/
+}
+
+.bcolor-rgb{
+    background-color: rgb(255, 0, 0);
+}
+
+.red-box{width: 10rem;
+    height: 10rem;
+    background-color: red;
+
+}
+
+img rgb{
+    width: 10rem;
+    height: 10rem;
+}
+
+img size{width: 10rem;
+    height: 10rem;
+
+}
+
+img position{
+    width: 3rem;
+    height: 3rem;
+}
