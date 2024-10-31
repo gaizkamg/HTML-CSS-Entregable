@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/tablas.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -16,9 +17,437 @@
         <h1>Conceptos HTML Y CSS</h1>
     </header>
     <main>
-       <h2>Tablas HTML</h2>
-       <p>Primer párrafo</p>
+       <h1>Tablas HTML</h1>
+        <div>
+            <h2>Tabla simple</h2>
+        <table>
+            <tr>
+                <td></td>
+                <td>Lunes</td>
+                <td>Martes</td>
+                <td>Miércoles</td>
+                <td>Jueves</td>
+                <td>Viernes</td>
+            </tr>
+            <tr>
+                <td>8.30</td>
+                <td>HTML y CSS</td>
+                <td>JavaScript</td>
+                <td>Soft skills</td>
+                <td>Python</td>
+                <td>HTML y CSS</td>
+            </tr>
+        
+            <tr>
+                <td>11.30</td>
+                <td>Python</td>
+                <td>Lenguaje</td>
+                <td>JavaScript</td>
+                <td>SQL</td>
+                <td>Soft skills</td>
+            </tr>
+        </table>
+        </div>
+
+        <div>
+        <h2>Elementos de marcado semántico en las tablas</h2>
+            <p>Celdas de cabecera</p>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+                <tr>
+                    <th>8.30</th>
+                    <td>HTML y CSS</td>
+                    <td>JavaScript</td>
+                    <td>Soft skills</td>
+                    <td>Python</td>
+                    <td>HTML y CSS</td>
+                </tr>
+            
+                <tr>
+                    <th>11.30</th>
+                    <td>Python</td>
+                    <td>Lenguaje</td>
+                    <td>JavaScript</td>
+                    <td>SQL</td>
+                    <td>Soft skills</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <p>Títulos</p>
+            <table border=”1” rules=”groups”> 
+                <caption>Ventas</caption>
+                <tr>
+                    <th>Hardware</th>
+                    <td>12.190 €</td>
+                </tr>
+            
+                <tr>
+                    <th>Software</th>
+                    <td>9.870 €</td>
+                </tr>
+            </table>
+        </div>
+
+        <div><p>Agrupación de filas</p>
+            <table border=”1” rules=”groups”>
+                <caption>Ventas por secciones</caption>
+                <thead>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>Hardware</td>
+                        <td>Software</td>
+                    </tr>
+                </thead>
+           
+                <tfoot>
+                    <tr>
+                        <th>Total</th>
+                        <th>25000</th>
+                        <th>22000</th>
+                    </tr>
+                </tfoot>
+           
+                <tbody>
+                    <tr>
+                        <th>Enero</th>
+                        <td>12000</td>
+                        <td>15000</td>
+                    </tr>
+                    <tr>
+                        <th>Febrero</th>
+                        <td>13000</td>
+                        <td>9000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <p>Agrupación de columnas</p>
+            <table>
+
+                <colgroup>
+            
+                    <col style="background-color: gray;">
+            
+                    <col span=”2” style="background-color: aquamarine;">
+            
+                </colgroup>    <thead>
+            
+                    <tr style="background-color: black; color:white">
+            
+                        <th>País</th>
+            
+                        <th>Capital</th>
+            
+                        <th>Otras ciudades</th>
+            
+                    </tr>
+            
+                 </thead>
+            
+                <tbody>
+            
+                    <tr>
+            
+                        <th>España</th>
+            
+                        <td>Madrid</td>
+            
+                        <td>Barcelona, Zaragoza, Sevilla, Valencia, 
+                            Bilbao</td>
+            
+                    </tr>
+            
+                    <tr>
+            
+                        <th>Francia</th>
+            
+                        <td>París</td>
+            
+                        <td>Lyon, Marsella, Nantes, Toulouse</td>
+            
+                    </tr>
+            
+                    <tr>
+            
+                        <th>Portugal</th>
+            
+                        <td>Lisboa</td>
+            
+                        <td>Oporto, Coimbra</td>
+            
+                    </tr>
+            
+                </tbody>
+            
+            </table>
+        </div>
     </main>
+    <footer>
+        <div>
+            <h2>Combinar celdas</h2>
+        <section>
+            
+    <table style="width: 40%;">
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td colspan="2">&nbsp;</td>
+            <td rowspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="3">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+    </table>
+        </section>
+        </div>
+    
+        <div>
+            <h2>Tablas dentro de tablas</h2>
+        <section>
+            
+            <table style="width: 40%;">
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table style="width: 100%;">
+                           <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+            
+                            </tr>
+            
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>&nbsp;</td>
+            
+                    <td>
+            
+                        <table style= "width: 100%">
+            
+                            <tr>
+            
+                                <td>&nbsp;</td>
+            
+                                <td>&nbsp;</td>
+            
+                                <td>&nbsp;</td>
+            
+                                <td>&nbsp;</td>
+            
+                                <td>&nbsp;</td>
+            
+                            </tr>
+            
+                        </table>
+            
+                    </td>
+            
+                    <td>&nbsp;</td>
+            
+                </tr>
+            
+                <tr>
+            
+                    <td>&nbsp;</td>
+            
+                    <td>
+            
+                        <table style="width: 100%;">
+            
+                            <tr>
+            
+                                <td>&nbsp;</td>
+            
+                                <td>&nbsp;</td>
+            
+                            </tr>
+            
+                            <tr>
+            
+                                <td>&nbsp;</td>
+            
+                                <td>&nbsp;</td>
+            
+                            </tr>
+            
+                        </table>
+            
+                    </td>
+            
+                    <td>&nbsp;</td>
+            
+                </tr>
+            
+            </table>
+        </section>
+        </div>
+
+        <h1>CSS</h1>
+       <div>
+        <h2>Border collapse</h2>
+        <section>
+            
+            <table style="border-collapse: separate; width: 40%;">
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+                <br>
+                <br>
+            
+            <table style="border-collapse: collapse; width: 40%;">
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+    
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+            </section>
+       </div>
+
+       <div>
+        <h2>Border spacing</h2>
+        <section>
+            <table style="border-spacing: 10px 5px; width: 40%;">
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+    
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        </section>
+
+
+       </div>
+
+       <div>
+        <h2>Caption side</h2>
+        <article>
+        <table border=”1” rules=”groups”> 
+            <caption style="caption-side: bottom;">Ventas</caption>
+            <tr>
+                <th>Hardware</th>
+                <td>12.190 €</td>
+            </tr>
+        
+            <tr>
+                <th>Software</th>
+                <td>9.870 €</td>
+            </tr>
+        </table>
+    </article>
+    </div>
+
+    <div>
+        <h2>Empty cells</h2>
+        <section>
+        
+        <table style="width: 40%; empty-cells: hide;">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td> </td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td> </td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+
+            <tr>
+                <td> </td>
+                <td>10</td>
+                <td>11</td>
+                <td> </td>
+            </tr>
+        </table>
+        
+        </section>
+    </div>
+
+        
+
+       
+    </footer>
     <div class="volver">
         <a href="index.html">VOLVER AL INDICE</a>
        </div>

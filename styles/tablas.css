@@ -1,0 +1,25 @@
+
+
+h2{font-size: 2.5rem;
+    text-align:center;
+color: blue;
+font-family: 'Courier New', Courier, monospace;}
+
+p {font-size: 2rem;
+    text-align: center;
+font-weight: bold;
+font-family: 'Courier New', Courier, monospace;}
+
+div {padding: 2rem;}
+
+section {width: 60%;}
+section table{width:200%;}
+section td{border:2px solid black;}
+
+article {display: flex;
+        justify-content: center;}
+
+
+
+footer section {margin-left: 37.5%;
+}
