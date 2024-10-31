@@ -1,6 +1,21 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
 
 
-h2{font-size: 2.5rem;
+h2 {font-family: "Teko", sans-serif;
+    font-size: 2em;
+    max-width: 30rem;
+    margin: 2rem auto;
+
+    text-align: center;
+    line-height: 2%;
+    text-shadow: 2px 2px 6px rgb(20, 218, 253);
+    color: rgb(23, 23, 172);}
+
+h3{font-size: 2.5rem;
     text-align:center;
 color: blue;
 font-family: 'Courier New', Courier, monospace;}
@@ -12,7 +27,8 @@ font-family: 'Courier New', Courier, monospace;}
 
 div {padding: 2rem;}
 
-section {width: 60%;}
+section {width: 60%;
+background-color: white;}
 section table{width:200%;}
 section td{border:2px solid black;}
 
@@ -21,5 +37,5 @@ article {display: flex;
 
 
 
-footer section {margin-left: 37.5%;
-}
+footer section {margin-left: 37.5%;}
+
