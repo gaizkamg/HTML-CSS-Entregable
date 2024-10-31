@@ -1,7 +1,116 @@
 code {
-    background-color: rgb(43, 43, 43);
+    background-color: #444;
     color: rgb(210, 255, 138);
     padding: 0.5rem;
     margin: 0.5rem;
 }
+
+pre{
+background-color: #444;
+padding: 0.5rem;
+margin: .5rem;
+border-radius: 5px;
+line-height: 24px;
+padding: 24px;
+white-space: pre-wrap;
+word-wrap: break-word;
+text-align: left;
+}
+
+/* Pantallas muy pequeñas  (móviles en portrait de menos de 576px)
+
+No hace falta media-query porque será nuestro diseño por defecto */
+
+
+
+/* Pantallas pequeñas (móviles en landscape de más de 576px)*/
+
+@media (min-width: 576px) { 
+    body{
+        border: 1rem solid rgb(99, 99, 255);
+    }
+    h1 {
+        margin: 2rem auto;
+        font-family: "Teko", sans-serif;
+        font-size: 7rem;
+        line-height: 6rem;
+        max-width: 40rem;
+        text-align: center;
+        text-shadow: 2px 2px 6px rgb(20, 218, 253);
+        color: rgb(23, 23, 172);
+    }
+
+    section {
+        background-color: rgb(200, 247, 255);
+        margin: 1rem auto;
+        padding: 1rem 3rem;
+    }
+}
+
+
+
+/* Pantallas medianas (tablets de más de 768px)*/
+
+@media (min-width: 768px) { 
+    body{
+        border: 1rem solid rgb(130, 255, 99);
+    }
+
+    h1{
+        font-size: 10rem;
+        line-height: 10rem;
+        max-width: 60rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 3rem 8rem;
+        border-radius: 3rem;
+        
+        }
+
+    section {
+        background-color: #e7ffcb;
+        margin: 3rem auto;
+        padding: 3rem 8rem;
+    }
+
+ }
+
+
+
+/* Pantallas grandes (desktops de más de 992px)*/
+
+@media (min-width: 992px) { 
+    body{
+        border: 1rem solid rgb(255, 99, 185);
+    }
+
+    section {
+        background-color: rgb(253, 192, 226);
+        margin: 3rem auto;
+        padding: 3rem 8rem;
+    }
+
+ }
+
+
+
+/* Pantallas muy grandes (desktops de más de 1200px)*/
+
+@media (min-width: 1200px) { 
+    body{
+        border: 1rem solid rgb(233, 198, 0);
+    max-width: 1024px; 
+    }
+
+    section {
+        background-color: rgb(255, 253, 157);
+        margin: 3rem auto;
+        padding: 3rem 8rem;
+    }
+ }
 

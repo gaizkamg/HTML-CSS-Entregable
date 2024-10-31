@@ -26,17 +26,6 @@
                 páginas webs de formas diferentes, apareciendo por el camino también diferentes necesidades, problemas y
                 soluciones.</p>
 
-                <div class="card-container">
-                    <!-- Checkbox oculto que actúa como disparador -->
-                    <input type="checkbox" id="toggle" class="toggle-checkbox">
-                    <label for="toggle" class="toggle-label">Mostrar tarjeta</label>
-                
-                    <!-- Contenido desplegable -->
-                    <div class="card">
-                        <p>Este es el contenido de la tarjeta que se despliega.</p>
-                    </div>
-                </div>
-
             <p>Hoy en día se le denomina Responsive Web Design (o RWD) a los diseños web que tienen la capacidad de
                 adaptarse al tamaño y formato de la pantalla en la que se visualiza el contenido, respecto a los diseños
                 tradicionales en los que las páginas web estaban diseñadas sólo para un tamaño o formato específico, y
@@ -53,6 +42,7 @@
                     en línea, por lo que es esencial darles una buena experiencia desde el principio. Sin embargo, esto
                     no quiere decir que se descuide la versión de escritorio, sino que esta se aborda después de haber
                     diseñado la móvil.
+                    <img src="images/mobile-first.png" alt="">
                     Este tipo de diseño sigue estos principios básicos:
                 </p>
                 <ul>
@@ -77,45 +67,188 @@
                 <p>
                     El concepto fue creado en 2011 por Luke Wroblewski, director de producto de Google, cuando publicó
                     su libro “Mobile First” como propuesta para crear un sitio web diseñado primero en móviles y después
-                    adaptado al ordenador.
-                    Pero, ¿qué es exactamente el Mobile First? Esta metodología se centra en diseñar primero pensando en
-                    el móvil, y después ya se creará el resto de diseños en la tablet, ordenador y otros dispositivos.
-                    La razón por la que es una tendencia es porque actualmente, y desde hace bastante tiempo, el móvil
-                    es el principal dispositivo de acceso a Internet. Por lo tanto, es esencial diseñar para los
-                    dispositivos móviles desde el principio y después adaptarlos a los demás para que la experiencia de
-                    usuario sea excelente.
-                </p>
+                    adaptado al ordenador.  </p>
+
+                    <p>
+                        Pero, ¿qué es exactamente el Mobile First? Esta metodología se centra en diseñar primero pensando en
+                        el móvil, y después ya se creará el resto de diseños en la tablet, ordenador y otros dispositivos.
+                    </p>
+
+                    <p>
+                        La razón por la que es una tendencia es porque actualmente, y desde hace bastante tiempo, el móvil
+                        es el principal dispositivo de acceso a Internet. Por lo tanto, es esencial diseñar para los
+                        dispositivos móviles desde el principio y después adaptarlos a los demás para que la experiencia de
+                        usuario sea excelente.
+                    </p>
+              
                 <h3>Ventajas del Mobile First</h3>
-                La popularidad del Mobile First no es casualidad, así lo demuestran las numerosas ventajas que ofrece.
-                Estas son algunas de las principales.
+                <p>
+                    La popularidad del Mobile First no es casualidad, así lo demuestran las numerosas ventajas que ofrece.
+                    Estas son algunas de las principales:
+                </p>
                 <ul>
-                    <li>Incrementa la visibilidad. El Mobile First permite construir un sitio web diseñado especialmente
-                        para los móviles, lo que incremente la visibilidad de la empresa, permitiendo un aumento en la
+                    <li><span class="resalte">Incrementa la visibilidad. </span>El Mobile First permite construir un sitio web diseñado especialmente
+                        para los móviles, lo que aumente la visibilidad de la empresa, permitiendo un aumento en la
                         captación de leads.</li>
-                    <li>Potencia la creatividad. Las limitaciones que tienen los móviles provocan una mayor creatividad
+                    <li><span class="resalte">Potencia la creatividad.</span> Las limitaciones que tienen los móviles provocan una mayor creatividad
                         en los diseñadores web. Esto se debe a que el tamaño reducido de la pantalla hace que sea
                         necesario buscar soluciones más innovadoras para mejorar la experiencia de usuario.</li>
-                    <li>Mayor facilidad para adaptar al ordenador. El esfuerzo para adaptar el diseño de una web de
+                    <li><span class="resalte">Mayor facilidad para adaptar al ordenador.</span> El esfuerzo para adaptar el diseño de una web de
                         móvil a una de ordenador es mucho menor que al contrario.</li>
-                    <li>Mejor posicionamiento. Google coloca en mejores posiciones a las páginas que ofrecen una mejor
+                    <li><span class="resalte">Mejor posicionamiento.</span> Google coloca en mejores posiciones a las páginas que ofrecen una mejor
                         experiencia de usuario en dispositivos móviles. Y esto está asegurado en Mobile First.</li>
                 </ul>
                 <p>
                     La estrategia Mobile-first es la que utilizan los diseñadores de sitios webs en las que su público
-                    objetivo es mayoritariamente usuario de móvil.
-                    Esta estrategia hace que el desarrollo en escritorio sea muy sencillo, ya que se reduce a tener un
-                    diseño de móvil en escritorio e ir añadiendo nuevas secciones o partes para «completar» el diseño en
-                    resoluciones grandes.
-                </p>
+                    objetivo es mayoritariamente usuario de móvil.  </p>
+
+                    <p>
+                        Esta estrategia hace que el desarrollo en escritorio sea muy sencillo, ya que se reduce a tener un
+                        diseño de móvil en escritorio e ir añadiendo nuevas secciones o partes para «completar» el diseño en
+                        resoluciones grandes.
+                    </p>
+              
 
             </section>
             <section class="viewport">
                 <h2>Etiqueta Viewport</h2>
-                La etiqueta <code>&lt;meta name="viewport"&gt;</code> es una parte esencial del diseño web responsive porque le dice al navegador cómo debe ajustar y mostrar la página en diferentes dispositivos.
+                <p>La etiqueta <code>&lt;meta name="viewport"&gt;</code> es una parte esencial del diseño web responsive porque le dice al navegador cómo debe ajustar y mostrar la página en diferentes dispositivos.</p>
+                <p>Esta etiqueta se está moviendo a CSS con la directiva @viewport. Digamos que es el intento de la W3C para tranferir la meta viewport a CSS. </p>
+                <p>Sin esta etiqueta, los sitios suelen mostrarse como en una pantalla de escritorio, lo que hace que los usuarios móviles tengan que hacer zoom o desplazarse horizontalmente para ver el contenido correctamente.</p>
+                <code>&lt;meta name="viewport"&gt; content="width=device-width, initial-scale=1.0"&gt;</code>
+
+                <h2>Atributos clave</h2>
+<ul>
+    <li><span class="resalte">width=device-width:</span> Establece el ancho del área de visualización (viewport) igual al ancho del dispositivo. Esto significa que la página usará el ancho completo de la pantalla del dispositivo, ya sea un móvil, tablet o computadora. Sin este ajuste, el navegador podría asumir que la página es más ancha que la pantalla, lo que obligaría al usuario a hacer zoom o desplazarse para verla completamente.</li>
+    <li><span class="resalte">initial-scale=1.0:</span> Define el nivel de zoom inicial de la página cuando se carga en el navegador. Un valor de 1.0 significa que la página se muestra sin ampliación ni reducción. Esto evita que el contenido se muestre demasiado pequeño en pantallas móviles.</li>
+    <li><span class="resalte">maximum-scale y minimum-scale:</span> Controlan los límites de zoom en la página, definiendo cuánto puede acercarse o alejarse el usuario.</li>
+    <li><span class="resalte">user-scalable=no</span> Impide que el usuario pueda hacer zoom en la página. Esto no suele ser recomendable para la accesibilidad, ya que algunos usuarios necesitan hacer zoom para leer el contenido más fácilmente.</li>
+</ul>
+
+<h2>¿Por qué es importante?</h2>
+<p>Sin la etiqueta viewport, el diseño responsive no funcionaría como se espera. En dispositivos móviles, sin la etiqueta, los usuarios verían la versión de escritorio comprimida, lo que afectaría la usabilidad y la experiencia del usuario.</p>
+<img src="images/comparativa-viewport.png" alt="">
             </section>
+
+
             <section class="mediaqueries">
                 <h2>Media Queries</h2>
-            </section>
+                <p>Las media queries son reglas en CSS que permiten aplicar estilos específicos a una página web dependiendo de ciertas características del dispositivo que la visualiza. Son una herramienta fundamental para el diseño responsive, ya que permiten adaptar el diseño de un sitio para que funcione y se vea bien en dispositivos de diferentes tamaños (móviles, tablets, laptops, y monitores grandes).</p>
+                <h2>¿Cómo funcionan las media queries?</h2>
+                <p>
+                    Las media queries detectan características como el ancho y la altura de la pantalla, la resolución, la orientación (horizontal o vertical), y aplican diferentes estilos CSS en función de estas condiciones.
+                    Es muy útil para poder cambiar la orientación de un móvil o una tablet y que la web responda y se recoloque de manera que sea más sencillo interactuar con ella.
+                </p>
+                <img src="images/media-queries.png" alt="">
+
+                <h2>Ejemplo básico</h2>
+                <p>Imagina que tienes un diseño web que quieres que se vea de una forma en pantallas grandes y de otra en pantallas pequeñas. Usarías media queries para cambiar los estilos según el ancho de la pantalla.</p>
+                <pre>
+<code>
+/* Estilos básicos que se aplican a todos los tamaños de pantalla */
+    body {
+        font-size: 16px;
+        background-color: white;
+    }
+                    
+/* Media query para pantallas de 768px o menos */
+    @media (max-width: 768px) {
+        body {
+            font-size: 14px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+            background-color: lightgray; /* Cambia el color de fondo */
+        }
+}
+</code>
+</pre>
+
+<h2>Principales tipos de media queries</h2>
+<p>Algunos de los tipos de media queries más usados:</p>
+<p><span class="resalte">max-width:</span> Aplica estilos cuando el ancho de la pantalla es igual o menor al valor especificado.</p>
+    <pre><code>
+        @media (max-width: 768px) { 
+            /* Estilos para pantallas de hasta 768px de ancho */
+        
+            /* estilos aquí */
+        }
+    </code></pre>
+
+      <p><span class="resalte">min-width:</span>Aplica estilos cuando el ancho de la pantalla es igual o mayor al valor especificado.</p>
+      <pre><code>
+        @media (min-width: 1024px) { 
+            /* Estilos para pantallas de al menos 1024px de ancho */ 
+            /* estilos aquí */ 
+        }
+    </code></pre>
+
+       <p><span class="resalte">min-height y max-height:</span>Se usan para ajustar el diseño en función de la altura de la pantalla, lo cual puede ser útil en dispositivos como tablets en modo horizontal y vertical.</p>
+      <pre><code>
+        @media (min-height: 600px) { 
+            /* estilos aquí */ 
+        }
+    </code></pre> 
+
+    <p><span class="resalte">min-height y max-height:</span>Se usan para ajustar el diseño en función de la altura de la pantalla, lo cual puede ser útil en dispositivos como tablets en modo horizontal y vertical.</p>
+    <pre><code>
+      @media (min-height: 600px) { 
+          /* estilos aquí */ 
+      }
+  </code></pre> 
+
+  <p><span class="resalte">orientation: </span>Permite detectar si el dispositivo está en modo horizontal (landscape) o vertical (portrait).</p>
+  <pre><code>
+    @media (orientation: landscape) { 
+        /* Estilos para orientación horizontal */
+        /* estilos aquí */
+    }
+</code></pre> 
+<p><span class="resalte">aspect-ratio:</span>Define los estilos según la relación de aspecto de la pantalla.</p>
+<pre><code>
+    @media (aspect-ratio: 16/9)  { 
+        /* Estilos para pantallas con relación 16:9 */ 
+        /* estilos aquí */
+    }
+</code></pre> 
+<h2>Ejemplo Avanzado de Media Queries</h2>
+<p>Supongamos que queremos ajustar el diseño de un sitio para que tenga tres diseños diferentes: uno para móviles, otro para tablets y otro para pantallas de escritorio.</p>
+  <pre><code>
+    /* Estilos para móviles (pantallas de hasta 600px) */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    background-color: lightblue;
+  }
+}
+/* Estilos para tablets (pantallas de 601px a 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+    background-color: lightgreen;
+  }
+}
+
+/* Estilos para pantallas de escritorio (más de 1024px) */
+@media (min-width: 1025px) {
+  body {
+    font-size: 18px;
+    background-color: lightcoral;
+  }
+}
+</code></pre> 
+<h2>Ventajas de las media queries</h2>
+<ol>
+    <li><span class="resalte">Personalización:</span> Permiten personalizar la experiencia de usuario para cada dispositivo.</li>
+    <li><span class="resalte">Flexibilidad: </span>Los estilos cambian en función de la pantalla, haciendo que el diseño sea adaptable.</li>
+    <li><span class="resalte">Eficiencia: </span>Los usuarios ven solo los estilos que necesitan, lo que puede mejorar el rendimiento en dispositivos más lentos.</li>
+</ol>
+<h2>Buenas prácticas</h2>
+<ol>
+    <li><span class="resalte">Mobile First: </span>Diseñar primero para pantallas pequeñas y luego agregar media queries para pantallas más grandes usando min-width.</li>
+    <li><span class="resalte">Simplificar media queries: </span>Evitar crear media queries muy específicas que puedan complicar el mantenimiento del código.</li>
+    <li><span class="resalte">Testear en diferentes dispositivos: </span>Es importante probar los diseños en dispositivos reales para asegurarse de que las media queries funcionen como se espera.</li>
+</ol>
+
+
+</section>
 
 
         </article>

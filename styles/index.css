@@ -1,4 +1,7 @@
 /* RESET */
+* {
+    box-sizing: border-box;
+}
 
 html {
     /* 62.5% of 16px user agent font size is 10px */
@@ -7,25 +10,47 @@ html {
 
 body {
         font-size: 1.6rem;
+        border: 1rem solid rgb(255, 94, 94);
+        margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* FIN RESET */
+
 main {
 display: flex;
 flex-direction: column;
-align-items: center;
+justify-content: center;
+margin: 0 auto;
+padding: 3rem 8rem;
+border-radius: 3rem;
 }
 
+section {
+    background-color:  rgb(252, 127, 127);
+    margin: 1rem auto;
+    padding: 1rem 3rem;
+}
 
 h1 {
-    margin: 3rem;
+
     font-family: "Teko", sans-serif;
-    font-size: 10rem;
+    font-size: 4em;
+    max-width: 30rem;
+    margin: 2rem auto;
+
     text-align: center;
+    line-height: 5rem;
     text-shadow: 2px 2px 6px rgb(20, 218, 253);
     color: rgb(23, 23, 172);
 }
 
+.resalte {
+    font-weight: bold;
+}
 
 .enlaces {
     margin: 0 auto;
@@ -53,4 +78,31 @@ h1 {
 .enlaces a:hover{
     background-color: rgb(7, 226, 255);
     color: blue;
+}
+
+.volver{
+    margin: 0 auto;
+}
+
+.volver a{
+    background-color: rgb(0, 153, 255);
+    color: rgb(246, 246, 255);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.volver:hover a {
+    background-color: rgb(246, 246, 255);
+    color: rgb(0, 153, 255);;
+    border: 1px solid rgb(0, 153, 255); 
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
 }
