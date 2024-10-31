@@ -1,3 +1,15 @@
+body {
+    font-size: 1.6rem;
+    border: 1rem solid rgb(253, 102, 102);
+    margin: 0 auto;
+}
+
+h1 {
+
+    text-shadow: 2px 2px 6px rgb(48, 46, 46);
+    color: rgb(253, 102, 102);
+}
+
 code {
     background-color: #444;
     color: rgb(210, 255, 138);
@@ -17,6 +29,12 @@ word-wrap: break-word;
 text-align: left;
 }
 
+section {
+    background-color:  rgb(252, 127, 127);
+    margin: 1rem auto;
+    padding: 1rem 3rem;
+}
+
 /* Pantallas muy pequeñas  (móviles en portrait de menos de 576px)
 
 No hace falta media-query porque será nuestro diseño por defecto */
@@ -30,8 +48,7 @@ No hace falta media-query porque será nuestro diseño por defecto */
         border: 1rem solid rgb(99, 99, 255);
     }
     h1 {
-        margin: 2rem auto;
-        font-family: "Teko", sans-serif;
+
         font-size: 7rem;
         line-height: 6rem;
         max-width: 40rem;
@@ -60,6 +77,8 @@ No hace falta media-query porque será nuestro diseño por defecto */
         font-size: 10rem;
         line-height: 10rem;
         max-width: 60rem;
+        color: rgb(130, 255, 99);
+        text-shadow: 2px 2px 6px rgb(22, 124, 8);
     }
 
     main {
@@ -89,6 +108,14 @@ No hace falta media-query porque será nuestro diseño por defecto */
         border: 1rem solid rgb(255, 99, 185);
     }
 
+    h1{
+        font-size: 10rem;
+        line-height: 10rem;
+        max-width: 60rem;
+        color: rgb(255, 99, 185);
+        text-shadow: 2px 2px 6px rgb(121, 38, 83);
+    }
+
     section {
         background-color: rgb(253, 192, 226);
         margin: 3rem auto;
@@ -106,6 +133,15 @@ No hace falta media-query porque será nuestro diseño por defecto */
         border: 1rem solid rgb(233, 198, 0);
     max-width: 1024px; 
     }
+
+    h1{
+        font-size: 10rem;
+        line-height: 10rem;
+        max-width: 60rem;
+        color: rgb(233, 198, 0);
+        text-shadow: 2px 2px 6px rgb(90, 78, 7);
+    }
+
 
     section {
         background-color: rgb(255, 253, 157);
