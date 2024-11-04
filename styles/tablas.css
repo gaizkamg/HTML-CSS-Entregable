@@ -37,5 +37,11 @@ article {display: flex;
 
 
 
-footer section {margin-left: 37.5%;}
+div.tablas section {margin-left: 37.5%;}
+
+div.volver {width: 25rem;
+margin-top: 4rem;}
+div.volver a {display: flex;
+            justify-content: center;
+           align-items: center;}
 
