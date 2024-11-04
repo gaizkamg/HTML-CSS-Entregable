@@ -45,7 +45,8 @@ No hace falta media-query porque será nuestro diseño por defecto */
 
 @media (min-width: 576px) { 
     body{
-        border: 1rem solid rgb(99, 99, 255);
+   
+        border: 1rem solid rgb(233, 198, 0);
     }
     h1 {
 
@@ -53,8 +54,9 @@ No hace falta media-query porque será nuestro diseño por defecto */
         line-height: 6rem;
         max-width: 40rem;
         text-align: center;
-        text-shadow: 2px 2px 6px rgb(20, 218, 253);
-        color: rgb(23, 23, 172);
+        color: rgb(233, 198, 0);
+        text-shadow: 2px 2px 6px rgb(90, 78, 7);
+
     }
 
     section {
@@ -130,16 +132,16 @@ No hace falta media-query porque será nuestro diseño por defecto */
 
 @media (min-width: 1200px) { 
     body{
-        border: 1rem solid rgb(233, 198, 0);
-    max-width: 1024px; 
+        border: 1rem solid rgb(99, 99, 255);
+        max-width: 1024px; 
     }
 
     h1{
         font-size: 10rem;
         line-height: 10rem;
         max-width: 60rem;
-        color: rgb(233, 198, 0);
-        text-shadow: 2px 2px 6px rgb(90, 78, 7);
+        text-shadow: 2px 2px 6px rgb(20, 218, 253);
+        color: rgb(23, 23, 172);
     }
 
 
