@@ -14,11 +14,6 @@ body {
     align-items: center;
 }
 
-.header, .volver {
-    text-align: center;
-    margin: 20px;
-    font-family:'Montserrat', sans-serif;
-}
 .subtitulo{
     margin-top: 5px;
 }
