@@ -2,54 +2,48 @@
 
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: white;
+    background-color: rgb(189, 187, 188);
     color:black;
-}
-
-header, .volver {
-    text-align: center;
-    margin: 20px;
-}
-
-h1, h2, h3 {
-    font-family: 'Teko', sans-serif;
-}
-
-.intro {
-    text-align: center;
-    margin: 20px auto;
-    max-width: 600px;
-}
-
-.intro nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 5px 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-.flex-container {
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-}
-
-.Ejemplos {
     display: flex;
-    margin: 10px 0;
-    gap: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
 }
+
+.header, .volver {
+    text-align: center;
+    margin: 20px;
+    font-family:'Montserrat', sans-serif;
+}
+.subtitulo{
+    margin-top: 5px;
+}
+.Listas {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+
+}
+.lista-ordenada{
+    margin-left: 15px;
+    
+}
+.flex-container {
+    max-width: 900px;
+    width: 90%;
+    background-color:#fff;
+    padding: 20px;
+    margin:20px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px black;}
+
+
 .Ejemplo-row{
     display: flex;
     flex-direction: row;
@@ -57,10 +51,8 @@ h1, h2, h3 {
     gap: 10px;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    justify-content: center;
-    justify-content: flex-start;
-}
+    border-radius: 5px; }
+
 .Ejemplo-column{
     display: flex;
     flex-direction: column;
@@ -69,9 +61,7 @@ h1, h2, h3 {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    justify-content: center;
-    justify-content: flex-start;
-}
+    align-items: center;}
 
 .Ejemplo-row-reverse{
     display: flex;
@@ -80,21 +70,18 @@ h1, h2, h3 {
     gap: 10px;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    justify-content: center;
-    justify-content: flex-start;}
-    
- .Ejemplo-column-reverse{      
+    border-radius: 5px;}
+
+.Ejemplo-column-reverse{      
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 10px 0;
     gap: 10px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    justify-content: center;
-    justify-content: flex-start;}
-
+    align-items:center;}
+    
 .Ejemplo-flex-start{
     display: flex;
     margin: 10px 0;
@@ -103,9 +90,8 @@ h1, h2, h3 {
     border: 1px solid #ddd;
     border-radius: 5px;
     justify-content: center;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start;}
+    
 .Ejemplo-center{
     display: flex;
     margin: 10px 0;
@@ -113,8 +99,8 @@ h1, h2, h3 {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    justify-content: center;
-}
+    justify-content: center;}
+
 .Ejemplo-flex-end{
     display: flex;
     margin: 10px 0;
@@ -123,8 +109,8 @@ h1, h2, h3 {
     border: 1px solid #ddd;
     border-radius: 5px;
     justify-content: center;
-    justify-content: flex-end;
-}
+    justify-content: flex-end; }
+
 .Ejemplo-space-between{
     display: flex;
     justify-content: space-between;
@@ -132,10 +118,8 @@ h1, h2, h3 {
     gap: 10px;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    justify-content: center;
-    justify-content: flex-end;
-}
+    border-radius: 5px; }
+
 .Ejemplo-space-around{
     display: flex;
     justify-content: space-around;
@@ -143,11 +127,8 @@ h1, h2, h3 {
     gap: 10px;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    justify-content: center;
-    justify-content: flex-end;
-}
-
+    border-radius: 5px; }
+    
 .Ejemplo-space-evenly{
     display: flex;
     justify-content: space-evenly;
@@ -156,9 +137,38 @@ h1, h2, h3 {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    justify-content: center;
-    justify-content: flex-end;
-}
+    }
+    
+.Ejemplo-stretch{
+    display: flex;
+    align-items: stretch;
+    height: 200px;
+    margin: 10px 0;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px; }
+
+ .Ejemplo-baseline{
+    display: flex;
+    align-items: baseline;
+    margin: 10px 0;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px; }
+
+.Ejemplo-baseline .Ejemplo-caja:nth-child(1) {
+    font-size: 16px; /* Primer elemento con fuente pequeña */
+    }
+    
+.Ejemplo-baseline .Ejemplo-caja:nth-child(2) {
+    font-size: 24px; /* Segundo elemento con fuente mediana */
+    }
+    
+.Ejemplo-baseline .Ejemplo-caja:nth-child(3) {
+    font-size: 32px; /* Tercer elemento con fuente grande */
+    }
 .Ejemplo-caja {
     padding: 10px;
     background-color: #d61777;
@@ -167,4 +177,5 @@ h1, h2, h3 {
     text-align: center;
     width: 100px;
     font-weight: bold;
-}
+    }
+    

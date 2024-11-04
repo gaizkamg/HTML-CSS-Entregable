@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/styles/styleflexboxcss">
+        <link rel="stylesheet" href="/styles/styleflexbox.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -16,24 +16,34 @@
         <h1>Conceptos HTML Y CSS</h1>
     </header>
     <main>
-        <div class="Intro">
-            <h2>¿Qué es flexbox?</h2>
-            <p>Es un modelo de diseño en CSS que alinea elementos en una interfaz web de manera que se distribuyan el espacio y se alineen en filas o columnas, mejorando así la usabilidad y estética de la página</p>
-            <nav>
-                <a href="Enlace1">Flex-direction</a>
-                <a href="Enlace2">Eje-horizontal</a>
-                <a href="Enlace3">Eje-vertical</a>
-            </nav>
+        <div class="flex-container">
+            <h2>Introducción a Flexbox</h2>
+            <div class="subtitulo">
+                <p>Flexbox es un modelo de diseño en CSS que alinea elementos en una interfaz web de manera que se distribuyan el espacio y se alineen en filas o columnas, mejorando así la usabilidad y estética de la página.</p>
+            </div>
+            <div class="Listas">
+                <ul class="lista-ordenada">
+                    <li><strong>Display:flex:</strong> Activa Flexbox en el contenedor.</li>
+                    <li><strong>Flex-direction:</strong> Define la dirección (fila o columna).</li>
+                    <li><strong>Justify-content:</strong> Controla la alineación horizontal.</li>
+                    <li><strong>Align-items:</strong> Controla la alineación vertical.</li>
+                </ul>
+            </div>
         </div>
 
-        <section id="Enlace1"  class="flex-container">
+        <div class="flex-container">
             <h3>Flex-direction</h3>
-            <p>Controla la dirección en la que se colocan los elementos dentro del contenedor flex</p>
-
-            <p>Row: Los elementos se alinean en una fila horizontal (valor por defecto).</p>
-            <p>Column:Los elementos alineados en una columna vertical.</p>
-            <p>Row-reverse: Alinea los elementos en una fila, pero en orden inverso.</p>
-            <p>Column-reverse:Alinea los elementos en una columna en orden inverso. </p>
+            <div class="subtitulo">
+                <p>Controla la dirección en la que se colocan los elementos dentro del contenedor flex</p>
+            </div>
+            <div class="Listas">
+                <ul class="lista-ordenada">
+                    <li><strong>Row</strong> Alinea los elementos en la fila horizontal.</li>
+                    <li><strong>Column:</strong> Alinea los elementos en la columna vertical.</li>
+                    <li><strong>Row-Reverse:</strong> Invierte la alineación en fila.</li>
+                    <li><strong>Column-Reverse:</strong> Invierte la alineación en columna.</li>
+                </ul>
+            </div>
             
             <div class="Ejemplo-row">
                 <div class="Ejemplo-caja">Row</div>
@@ -43,7 +53,7 @@
             <div class="Ejemplo-column">
                 <div class="Ejemplo-caja">Column</div>
                 <div class="Ejemplo-caja">Column</div>
-                <div class="Ejemplo-caja">Column</div>
+                
             </div>
 
             <div class="Ejemplo-row-reverse">
@@ -54,99 +64,118 @@
             </div>
 
             <div class="Ejemplo-column-reverse">
-                <div class="Ejemplo-caja">Column-reverse</div>
-                <div class="Ejemplo-caja">Column-reverse</div>
-                <div class="Ejemplo-caja">Column-reverse</div>
+                <div class="Ejemplo-caja">Column-reverse1</div>
+                <div class="Ejemplo-caja">Column-reverse2</div>
+                
             </div>
 
-        </section>
-
-        <section id="Enlace2" class="flex-container">
-        <h3>Eje horizontal (Justify-content)</h3>
-        <p> Define cómo se alinean los elementos a lo largo del eje horizontal</p>
-        <div class="Ejemplo-flex-start">
-            <div class="Ejemplo-caja">flex-start</div>
-            <div class="Ejemplo-caja">flex-start</div>
-            <div class="Ejemplo-caja">flex-start</div>
-            
         </div>
         
-        <div class="Ejemplo-center">
-            <div class="Ejemplo-caja">center</div>
-            <div class="Ejemplo-caja">center</div>
-            <div class="Ejemplo-caja">center</div>
-            
-        </div>
-
-        <div class="Ejemplo-flex-end">
-            <div class="Ejemplo-caja">flex-end</div>
-            <div class="Ejemplo-caja">flex-end</div>
-            <div class="Ejemplo-caja">flex-end</div>
-            
-        </div>
-
-        <div class="Ejemplo-space-between">
-            <div class="Ejemplo-caja">space-between</div>
-            <div class="Ejemplo-caja">space-between</div>
-            <div class="Ejemplo-caja">space-between</div>
-        </div>
-
-        <div class="Ejemplo-space-around">
-            <div class="Ejemplo-caja">Space-around</div>
-            <div class="Ejemplo-caja">Space-around</div>
-            <div class="Ejemplo-caja">Space-around</div>
-        </div>
-
-        <div class="Ejemplo-space-evenly">
-            <div class="Ejemplo-caja">Space-evenly</div>
-            <div class="Ejemplo-caja">Space-evenly</div>
-            <div class="Ejemplo-caja">Space-evenly</div>
-        </div>
-
-        </section>
-
-        <section id="Enlace3" class="flex-container">
-            <h3>Eje Vertical (Align-items)</h3>
-           <p>Define cómo se alinean los elementos a lo largo del eje vertical</p> 
-           <div class="Ejemplo-flex-start">
-                <div class="Ejemplo-caja">flex-start</div>
-                <div class="Ejemplo-caja">flex-start</div>
-                <div class="Ejemplo-caja">flex-start</div>
-                
+        <div class="flex-container">
+            <h3>Eje horizontal (Justify-content)</h3>
+            <div class="subtitulo">
+                <p> Define cómo se alinean los elementos a lo largo del eje horizontal</p>
             </div>
-
+            <div class="Listas">
+                <ul class="lista-ordenada">
+                    <li><strong>Flex-start:</strong> Alinea los elementos al inicio del contenedor.</li>
+                    <li><strong>Center:</strong> Centra los elementos en el contenedor.</li>
+                    <li><strong>Flex-end:</strong> Alinea los elementos al final del contenedor.</li>
+                    <li><strong>Space-between:</strong>Distribuye el espacio uniformemente entre los elementos, dejando el espacio al inicio y al final .</li>
+                    <li><strong>Space-around:</strong> Distribuye el espacio uniformemente alrededor de cada elemento .</li>
+                    <li><strong>Space-evenly:</strong>Distribuye el espacio uniformemente entre todos los elementos del inicio y el final.</li>
+                </ul>
+            </div>
+        
+            <div class="Ejemplo-flex-start">
+                <div class="Ejemplo-caja">flex-start</div>
+                <div class="Ejemplo-caja">flex-start</div>
+                <div class="Ejemplo-caja">flex-start</div>
+            
+            </div>
+        
             <div class="Ejemplo-center">
-                <div class="Ejemplo-caja">Center</div>
-                <div class="Ejemplo-caja">Center</div>
-                <div class="Ejemplo-caja">Center</div>
-                
+                <div class="Ejemplo-caja">center</div>
+                <div class="Ejemplo-caja">center</div>
+                <div class="Ejemplo-caja">center</div>
+            
             </div>
 
             <div class="Ejemplo-flex-end">
                 <div class="Ejemplo-caja">flex-end</div>
                 <div class="Ejemplo-caja">flex-end</div>
                 <div class="Ejemplo-caja">flex-end</div>
-               
+            
+            </div>
+
+            <div class="Ejemplo-space-between">
+                <div class="Ejemplo-caja">space-between</div>
+                <div class="Ejemplo-caja">space-between</div>
+                <div class="Ejemplo-caja">space-between</div>
+            </div>
+
+            <div class="Ejemplo-space-around">
+                <div class="Ejemplo-caja">Space-around</div>
+                <div class="Ejemplo-caja">Space-around</div>
+                <div class="Ejemplo-caja">Space-around</div>
+            </div>
+
+            <div class="Ejemplo-space-evenly">
+                <div class="Ejemplo-caja">Space-evenly</div>
+                <div class="Ejemplo-caja">Space-evenly</div>
+                <div class="Ejemplo-caja">Space-evenly</div>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <h3>Eje Vertical (Align-items)</h3>
+            <div class="subtitulo">
+                <p>Define cómo se alinean los elementos a lo largo del eje vertical</p> 
+            </div>
+            <div class="Listas">
+                <ul class="lista-ordenada">
+                    <li><strong>Flex-start:</strong> Alinea los elementos en la parte superior.</li>
+                    <li><strong>Center:</strong> Centra los elementos verticalmente.</li>
+                    <li><strong>Flex-end:</strong> Alinea los elementos en la parte inferior.</li>
+                    <li><strong>Stretch:</strong>Ajusta los elementos al tamaño del contenedor.</li>
+                    <li><strong>Baseline:</strong>Alinea los elementos en sus líneas de base .</li>
+                </ul>
+            </div>
+            
+            <div class="Ejemplo-flex-start">
+                <div class="Ejemplo-caja">flex-start</div>
+                <div class="Ejemplo-caja">flex-start</div>
+                <div class="Ejemplo-caja">flex-start</div>
+            </div>
+
+            <div class="Ejemplo-center">
+                <div class="Ejemplo-caja">Center</div>
+                <div class="Ejemplo-caja">Center</div>
+                <div class="Ejemplo-caja">Center</div>
+            </div>
+
+            <div class="Ejemplo-flex-end">
+                <div class="Ejemplo-caja">flex-end</div>
+                <div class="Ejemplo-caja">flex-end</div>
+                <div class="Ejemplo-caja">flex-end</div>
             </div>
 
             <div class="Ejemplo-stretch">
                 <div class="Ejemplo-caja">Stretch</div>
                 <div class="Ejemplo-caja">Stretch</div>
                 <div class="Ejemplo-caja">Stretch</div>
-               
             </div>
 
             <div class="Ejemplo-baseline">
                 <div class="Ejemplo-caja">baseline</div>
                 <div class="Ejemplo-caja">baseline</div>
                 <div class="Ejemplo-caja">baseline</div>
-               
             </div>
 
-        </section>
+        </div>
 
        <div class="volver">
-        <a href="index.html">VOLVER AL INDICE</a>
+            <a href="index.html">VOLVER AL INDICE</a>
        </div>
     </main>
     <footer>
