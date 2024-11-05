@@ -29,10 +29,11 @@ word-wrap: break-word;
 text-align: left;
 }
 
+
 section {
     background-color:  rgb(252, 127, 127);
-    margin: 1rem auto;
-    padding: 1rem 3rem;
+    margin: 0.2rem auto;
+    padding: 0.2rem 0.3rem;
 }
 
 /* Pantallas muy pequeñas  (móviles en portrait de menos de 576px)
@@ -83,15 +84,7 @@ No hace falta media-query porque será nuestro diseño por defecto */
         text-shadow: 2px 2px 6px rgb(22, 124, 8);
     }
 
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 auto;
-        padding: 3rem 8rem;
-        border-radius: 3rem;
-        
-        }
+
 
     section {
         background-color: #e7ffcb;
@@ -146,7 +139,7 @@ No hace falta media-query porque será nuestro diseño por defecto */
 
 
     section {
-        background-color: rgb(255, 253, 157);
+        background-color: rgb(157, 248, 255);
         margin: 3rem auto;
         padding: 3rem 8rem;
     }
