@@ -157,6 +157,33 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px; }
 
+.Ejemplo-nowrap{
+    display: flex;
+    flex-wrap:nowrap;
+    margin: 10px 0;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px; }
+
+.Ejemplo-wrap{
+    display: flex;
+    flex-wrap:wrap;
+    margin: 10px 0;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px; }
+
+.Ejemplo-wrap-reverse{
+    display: flex;
+    flex-wrap:nowrap;
+    margin: 10px 0;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px; }
+
 .Ejemplo-baseline .Ejemplo-caja:nth-child(1) {
     font-size: 16px; /* Primer elemento con fuente pequeña */
     }
