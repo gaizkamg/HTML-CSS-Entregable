@@ -143,7 +143,10 @@ body {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    align-items: flex-start;}
+    align-items: flex-start;
+    height:150px;
+    border: 1rem solid red;
+}
 
 .Ejemplo-center-vertical{
     display: flex;
@@ -152,7 +155,10 @@ body {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    align-items: center;}
+    align-items: center;
+    height:150px;
+    border: 1rem solid red;
+}
     
 .Ejemplo-flex-end-vertical{
     display: flex;
@@ -162,6 +168,8 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     align-items:flex-end;
+    height:150px;
+    border: 1rem solid red;
 }
     
     
@@ -175,7 +183,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px; }
 
- .Ejemplo-baseline-vertical{
+ .Ejemplo-baseline{
     display: flex;
     align-items: baseline;
     margin: 10px 0;
@@ -229,7 +237,6 @@ body {
     border-radius: 5px;
     text-align: center;
     width: 100px;
-    height: 80px;
     font-weight: bold;
     }
 
