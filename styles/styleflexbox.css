@@ -177,7 +177,7 @@ body {
 
 .Ejemplo-wrap-reverse{
     display: flex;
-    flex-wrap:nowrap;
+    flex-wrap:wrap-reverse;
     margin: 10px 0;
     gap: 10px;
     padding: 10px;
